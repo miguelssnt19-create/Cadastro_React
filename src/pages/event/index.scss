@@ -1,0 +1,31 @@
+
+.tudo{
+    display: flex;
+    justify-content: center;
+    
+}
+
+
+.cubico{
+    background-color: gray;
+    width: 500px;
+    display: flex;
+    flex-direction: column;
+}
+
+.texto{
+    width: 200px;
+}
+
+.selecione{
+    width: 200px;
+}
+
+.opcao{
+    display: flex;
+    flex-direction: column;
+}
+
+button{
+    width: 200px;
+}

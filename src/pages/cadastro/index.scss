@@ -1,0 +1,42 @@
+.tudo{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+
+.cubo{
+    background-color: darkcyan;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 500px;
+
+}
+
+.opçoes{
+    width: 200px;
+}
+
+.Tipo{
+    display: flex;
+    flex-direction: column;
+}
+
+.mous {
+    input{
+        background-color: lightgray;
+    width: 200px;
+    }
+}
+
+.clique{
+    align-self: center;
+    button{
+        height: 50px;
+        border-radius: 20px;
+        border: solid black 2px;
+    }
+}
+
