@@ -53,7 +53,8 @@ export default function Evento(){
         </div>
 
         <button>clica aqui</button>
-        < a href = '/'>voltar</a>
+        <a href="/contato">voltar</a>
+        < a href = '/contador'>contador</a>
         </div>
     </div>
     );

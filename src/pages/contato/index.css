@@ -6,5 +6,8 @@ text-align: center;
 h1{
     color: brown;
 }
-
+a{
+    text-decoration: none;
+    color: white;
+}
 }
