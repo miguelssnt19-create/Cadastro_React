@@ -3,6 +3,9 @@ import { useState } from 'react';
 
 
 export default function Contador(){
+    const [numero1, setNumero1] = useState('');
+    const [numero2, setNumero2] = useState('');
+
 
     const [numero, setNumero] = useState(0);
     
@@ -23,6 +26,11 @@ export default function Contador(){
         setNumero(0)
     }
 
+    function somar(){
+        let soma = numero1 + numero2;
+        setNumero(soma);
+    }
+
     return(
         <div className='tudo'>
             <h1>Contador : {numero}</h1>
@@ -34,7 +42,14 @@ export default function Contador(){
                 <br/>
                 <button className='botao4' onClick={zerar}>zerar</button>
 
-    
+                <br/>
+                <input type="text" placeholder="Número 1" value={numero1} onChange={(e) => setNumero1(Number(e.target.value))} />
+                <br/>
+                <input type="text" placeholder="Número 2" value={numero2} onChange={(e) => setNumero2(Number(e.target.value))} />
+                <br/>
+                <button className='botao5' onClick={somar}>Somar</button>
+                
+
             <br />
 
             <div>

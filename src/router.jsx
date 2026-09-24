@@ -5,6 +5,7 @@ import NotFound from './pages/notfound/index.jsx';
 import Evento from './pages/event/index.jsx';
 import Cadastro from './pages/cadastro/index.jsx';
 import Contador from './pages/contador/index.jsx';
+import Descricao from './pages/descricao/index.jsx';
 import { BrowserRouter, Route, Routes } from 'react-router-dom';
 
 export default function Router(){
@@ -16,6 +17,7 @@ export default function Router(){
         <Route path="/" element={<App />} />
         <Route path="/contato" element={<Contato />} />
         <Route path="/contador" element={<Contador />} />
+        <Route path='/descricao' element={<Descricao />} />
         <Route path="*" element={<NotFound />} />
       </Routes>
 </BrowserRouter>
