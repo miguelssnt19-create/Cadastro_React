@@ -32,7 +32,7 @@ export default function Contador(){
     }
 
     return(
-        <div className='tudo'>
+        <div className='tudoC'>
             <h1>Contador : {numero}</h1>
                 <button className='botao1' onClick={contador}>Aumentar</button>
                 <br/>
@@ -53,7 +53,9 @@ export default function Contador(){
             <br />
 
             <div>
-                <a href="/"> voltar ao inicio</a>
+                <a href="/evento"> voltar</a>
+                <br />
+                <a href="/descricao">Descrição</a>
             </div>
 
         </div>
