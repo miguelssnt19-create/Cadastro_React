@@ -21,6 +21,8 @@ export default function Descricao(){
             <div>
                 
                 <a href="/">voltar</a>
+                <br/>
+                <a href='/textos'>textos</a>
             </div>
         </div>
     );
