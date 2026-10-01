@@ -31,10 +31,25 @@ function trocar (){
     setTexto3(texto2) 
 }
 
-function mudar3(){
-    setTexto3(texto2);
+
+
+const [caixa, setCaixa] = useState('sim');
+const [caixa2, setCaixa2] = useState('nao');
+
+function botao(e){
+    let novobotao = e.target.check;
+    setCaixa(novobotao)
 }
- 
+
+function botao2(e){
+    if(e.target.checked){
+        setCaixa2('sim')
+    }
+    else{
+        setCaixa2('nao')
+    }
+}
+
     return(
     <div className='text_page' style={{ backgroundColor: cor }}>
         <h1>{texto1}</h1>
@@ -46,14 +61,19 @@ function mudar3(){
             <br/>
             <button  onClick={trocar}>alterar</button>
         </div>
+
         <br />
+        
         <div className='mudarcor'>
         <input className='COR' type="color" onChange={mudarCor} />
         </div>
-
-
+<div>
+            <h1>{caixa2}</h1>
+            <input type='checkbox'onChange={botao2} />
+</div>
 
         <div>
+            
             <a href="/">voltar</a>
         </div>
 
